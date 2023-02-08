@@ -13,16 +13,13 @@ h4{
 body{
     max-width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 70px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    position: relative;
+    gap: 3rem;
 }
 header > ul{
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     justify-content: flex-end;
     margin: 50px 0px 0px 0px;
@@ -161,7 +158,10 @@ main > div{
     }
 }
 @media screen and (max-width:625px) {
-    :is(.connect,.usage, .logo, .more){
-        flex-basis: 49.5%;
+    :is(.connect,.usage, .logo, .more, .sms, .settings){
+        flex-basis: 100%;
+    }
+    .logo{
+        padding: 2em;
     }
 }
